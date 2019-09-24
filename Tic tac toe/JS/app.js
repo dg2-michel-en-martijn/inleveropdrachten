@@ -8,7 +8,7 @@ function TicTacToe() {
   let turn = 0;
 
   this.start = function() {
-    const congif = { childList: true };
+    const config = { childList: true };
     const observer = new MutationObserver(() => takeTurn());
     board.positions.forEach((el) => observer.observe(el, config))
     takeTurn();
@@ -34,8 +34,14 @@ function Board() {
 
 function HumanPlayer() {
 
+  this.takeTurn = function() {
+
+  }
 }
 
 function HumanPlayer2() {
 
+  this.takeTurn = function() {
+
+  }
 }
