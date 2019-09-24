@@ -3,8 +3,8 @@ ticTacToe.start();
 
 function TicTacToe() {
   const board = new Board();
-  const humanPlayer = new HumanPlayer();
-  const humanPlayer2 = new HumanPlayer2();
+  const humanPlayer = new HumanPlayer(board);
+  const humanPlayer2 = new HumanPlayer2(board);
   let turn = 0;
 
   this.start = function() {
@@ -29,17 +29,21 @@ function TicTacToe() {
 
 function Board() {
   this.positions = Array.from(document.querySelectorAll('.col'));
-  console.log(this.positions);
 }
 
-function HumanPlayer() {
+function HumanPlayer(board) {
 
   this.takeTurn = function() {
+    board.positions
+      .forEach(el => el.addEventListener('click', handleTurnTaken));
+ }
 
+  function handleTurnTaken(event) {
+    console.log("turn taken")
   }
 }
 
-function HumanPlayer2() {
+function HumanPlayer2(board) {
 
   this.takeTurn = function() {
 
