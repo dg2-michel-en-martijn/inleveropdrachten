@@ -21,8 +21,6 @@ function TicTacToe() {
     } else {
       humanPlayer2.takeTurn();
     }
-
-
     turn++;
   }
 }
@@ -30,10 +28,9 @@ function TicTacToe() {
 function Board() {
   this.positions = Array.from(document.querySelectorAll('.col'));
 }
-
+/* PLAYER 1 */
 function HumanPlayer(board) {
-
-  this.takeTurn = function() {
+    this.takeTurn = function() {
     board.positions
       .forEach(el => el.addEventListener('click', handleTurnTaken));
  }
@@ -45,9 +42,17 @@ function HumanPlayer(board) {
   }
 }
 
+/* PLAYER 2 */
 function HumanPlayer2(board) {
-
   this.takeTurn = function() {
-
+    const availablePositions =
+      board.positions.filter((p) => p.innerText === '');
+      board.positions
+        .forEach(el => el.addEventListener('click', handleTurnTaken));
+}
+  function handleTurnTaken(event) {
+    event.target.innerText = 'O';
+    board.positions
+      .forEach(el => el.removeEventListener('click', handleTurnTaken));
   }
 }
