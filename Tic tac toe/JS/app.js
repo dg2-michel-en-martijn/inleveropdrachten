@@ -9,7 +9,6 @@ players[1] = "Player2";
 // play the game
 function play(clickedDiv)
 {
-  console.log(clickedDiv);
   clickedDiv.onclick = "";
   clickedDiv.innerHTML = "<span id='XenO'>"+ markers[whoseTurn] +"</span>";
   toggle();
