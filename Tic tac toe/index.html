@@ -1,29 +1,33 @@
 <!DOCTYPE html>
+<html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="./CSS/master.css">
+    <meta charset="utf-8">
     <title>Tic Tac Toe</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Tic Tac Toe</h1>
-      <div class="row borderB">
-        <div class="col borderR"></div>
-        <div class="col borderR"></div>
-        <div class="col"></div>
+</head>
+<body>
+  <h2 id="game-message">Tic Tac Toe</h2>
+    <div class="board">
+      <div id="row-1">
+        <div onclick="play(this);"></div>
+        <div onclick="play(this);"></div>
+        <div onclick="play(this);"></div>
       </div>
-      <div class="row borderB">
-        <div class="col borderR"></div>
-        <div class="col borderR"></div>
-        <div class="col"></div>
+
+      <div id="row-2">
+        <div onclick="play(this);"></div>
+        <div onclick="play(this);"></div>
+        <div onclick="play(this);"></div>
       </div>
-      <div class="row">
-        <div class="col borderR"></div>
-        <div class="col borderR"></div>
-        <div class="col "></div>
+
+      <div id="row-3">
+        <div onclick="play(this);"></div>
+        <div onclick="play(this);"></div>
+        <div onclick="play(this);"></div>
       </div>
-     </div>
-    <script src=./JS/app.js> </script>
+    </div>
+
+    <script src=./JS/app.js></script>
   </body>
 </html>
