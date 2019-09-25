@@ -1,3 +1,4 @@
+/* JS TIC TAC TOE */
 const ticTacToe = new TicTacToe();
 ticTacToe.start();
 
@@ -48,11 +49,11 @@ function HumanPlayer2(board) {
     const availablePositions =
       board.positions.filter((p) => p.innerText === '');
       board.positions
-        .forEach(el => el.addEventListener('click', handleTurnTaken));
+        .forEach(el => el.addEventListener('click', handleTurnTaken2));
 }
-  function handleTurnTaken(event) {
+  function handleTurnTaken2(event) {
     event.target.innerText = 'O';
     board.positions
-      .forEach(el => el.removeEventListener('click', handleTurnTaken));
+      .forEach(el => el.removeEventListener('click', handleTurnTaken2));
   }
 }
