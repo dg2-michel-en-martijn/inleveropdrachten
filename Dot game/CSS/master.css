@@ -1,0 +1,22 @@
+#gameboard {
+    margin: auto;
+    margin-top: auto;
+  	empty-cells:show;
+    width:250px;
+    height:250px;
+    border: 5px
+    solid black;
+}
+
+h1 {
+   text-align: center;
+}
+
+#background {
+    background-color:#000;
+}
+
+tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
