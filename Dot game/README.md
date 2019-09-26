@@ -1,1 +1,1 @@
-Hier kan je de files van eindopdracht 2 vinden.
+Hier kan je de files van inleveropdracht 2 vinden.
