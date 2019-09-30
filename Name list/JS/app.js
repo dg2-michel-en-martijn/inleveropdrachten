@@ -7,3 +7,11 @@ $(document).ready(function(){
       document.getElementById('blok1').innerHTML = leftArray.join("");
     }
   });
+  $("#rechts").click(function(){
+    rightArray.push(leftArray.join(""));
+    rightArray.join("");
+    leftArray = [];
+    document.getElementById('blok1').innerHTML = leftArray.join("");
+    document.getElementById('blok2').innerHTML = rightArray;
+  });
+});
