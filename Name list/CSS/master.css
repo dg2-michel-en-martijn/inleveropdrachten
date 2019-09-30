@@ -1,0 +1,33 @@
+#blok1 {
+  vertical-align:top;
+  border-style: solid;
+  display: inline-block;
+  height: 250px;
+  width: 200px;
+}
+
+#inline {
+  display: inline;
+}
+
+#invullen {
+  display: inline;
+  font-weight: bold;
+}
+
+#buttons {
+  display: inline-block;
+  margin-top: 100px;
+}
+
+#right, #left {
+  font-weight: bold;
+}
+
+#blok2 {
+  vertical-align:top;
+  border-style: solid;
+  display: inline-block;
+  height: 250px;
+  width: 200px;
+}
