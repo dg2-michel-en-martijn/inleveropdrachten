@@ -1,0 +1,2 @@
+var leftArray = [];
+var rightArray = [];
