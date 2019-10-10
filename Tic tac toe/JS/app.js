@@ -9,7 +9,7 @@ function play(clickedDiv)
 {
   if ( clickedDIv.innerHTML === "") {
     clickedDiv.onclick = "";
-    clickedDiv.innerHTML = "<span id='XenO'>"+ markers[whoseTurn] +"</span>";
+    clickedDiv.innerHTML = "<span class='XenO'>"+ markers[whoseTurn] +"</span>";
     toggle();
   }
 }
