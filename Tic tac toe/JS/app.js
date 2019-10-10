@@ -9,9 +9,11 @@ players[1] = "Player2";
 // play the game
 function play(clickedDiv)
 {
-  clickedDiv.onclick = "";
-  clickedDiv.innerHTML = "<span id='XenO'>"+ markers[whoseTurn] +"</span>";
-  toggle();
+  if ( clickedDIv.innerHTML === "") {
+    clickedDiv.onclick = "";
+    clickedDiv.innerHTML = "<span id='XenO'>"+ markers[whoseTurn] +"</span>";
+    toggle();
+  }
 }
 
 function toggle()
