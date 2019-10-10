@@ -17,10 +17,12 @@ function play(clickedDiv)
 function toggle()
 {
   if (whoseTurn == 0)
-  {whoseTurn = 1;
+  {
+    whoseTurn = 1;
   }
   else
-  {whoseTurn = 0;
+  {
+    whoseTurn = 0;
   }
 
   document.getElementById('game-message').innerText = players[whoseTurn] + "'s Turn";
