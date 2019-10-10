@@ -1,9 +1,7 @@
 //variables and players.
-var players=[];
+var players=["Player 1", "PLayer 2"];
 var markers=["X", "O"];
 var whoseTurn = 0;
-players[0] = "Player1";
-players[1] = "Player2";
 
 
 // play the game
