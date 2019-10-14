@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #313131;
+}
+
+/****** VARS ******/
+.inputs {
+  background-color: #dee1e9;
+  color: #4b4a4a;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 25px 50px;
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 1.25em;
+  border: 1px solid #d9dadd;
+  border-radius: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.inputs .input {
+  margin: 10px 0px;
+  height: 70px;
+}
+
+.inputs .input .input-field {
+  width: 100%;
+  padding: 5px 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #4b4a4a;
+  font-size: 1em;
+}
+
+.inputs .input .input-field::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+.inputs .input .input-field:-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+.inputs .input .input-field::-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+.inputs .input .input-field::placeholder {
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+.inputs .input .input-field:hover {
+  border-bottom: 1px solid black;
+}
+
+.inputs .input .ng-invalid {
+  color: #a52d2d;
+  border-bottom: 1px solid #a52d2d;
+}
+
+.inputs .input .errors .error {
+  color: #a52d2d;
+}
+
+.inputs .input .error {
+  display: none;
+}
+
+.inputs button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 10px 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #8ad3f0;
+  color: #4b4a4a;
+  border: none;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.inputs button:hover {
+  background-color: #a7d6e9;
+  color: #131313;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.inputs button:active {
+  background-color: #8ad3f0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.inputs h3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  margin: 0px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-41%);
+          transform: translateY(-41%);
+}
+
+@media screen and (max-width: 1045px) {
+  .inputs {
+    -ms-grid-columns: 400px;
+        grid-template-columns: 400px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
