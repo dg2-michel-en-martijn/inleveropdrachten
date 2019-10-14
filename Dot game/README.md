@@ -12,3 +12,8 @@ we hebben de volgende dingen geleerd:
 * functies gebruiken
 * if statements gebruiken
 * variablen gebruiken waaronder arrays
+
+## hoe werkt het
+### bewegen
+om te bewegen moet je op de pijltjestoetsen drukken.
+als je de randen raakt kun je niet verder bewegen
