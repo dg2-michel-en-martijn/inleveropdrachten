@@ -1,0 +1,32 @@
+.link{
+  float: right;
+  margin:20px 40px ;
+  mar
+  text-decoration:none;
+  color: black;
+  background:lightgrey;
+  box-shadow: 3px 3px 9px 1px grey;
+  font-size: 25px;
+}
+
+.link2{
+  float: center;
+  margin:20px 40px ;
+  mar
+  text-decoration:none;
+  color: black;
+  background:lightgrey;
+  box-shadow: 3px 3px 9px 1px grey;
+  font-size: 25px;
+}
+
+
+.woonplaats{
+  margin-top:25px;
+}
+
+.eenDiv{
+  display: inline-block;
+  float:left;
+  font-size:18px;
+}

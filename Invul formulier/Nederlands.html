@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./CSS/master.css">
+  </head>
+  <body>
+    <a class="link" href="Engels.html">Engels</a>
+    <div class=eenDiv>
+      <br>
+      <p>Naam:</p>
+      <p>adres:</p>
+      <p class=woonplaats>Woonplaats:</p>
+      <p>Postcode:</p>
+      <p>Geboortedatum:&nbsp;</p>
+      <p>Nationaliteit:</p>
+      <p>Beroep:</p>
+    </div>
+
+      <form action="Nederlands.html" method="post">
+        <input type="radio" id="vrouw" name="geslacht" value="Mevrouw" onclick="myFunction('vrouw')"> Mevrouw
+        <input type="radio" id="man" name="geslacht" value="Man" onclick="myFunction('man')"> heer
+      </form>
+        <script language=javascript>
+          function myFunction(waarde) {
+            if(waarde == "vrouw")
+            {
+              document.body.style.backgroundColor = "purple";
+              document.getElementById('divfield1').style.backgroundColor = "pink";
+              document.getElementById('divfield2').style.backgroundColor = "pink";
+              document.getElementById('divfield3').style.backgroundColor = "pink";
+              document.getElementById('divfield4').style.backgroundColor = "pink";
+              document.getElementById('divfield5').style.backgroundColor = "pink";
+              document.getElementById('divfield6').style.backgroundColor = "pink";
+              document.getElementById('divfield7').style.backgroundColor = "pink";
+            } else {
+              document.body.style.backgroundColor = "darkgreen";
+              document.getElementById('divfield1').style.backgroundColor = "lightgreen";
+              document.getElementById('divfield2').style.backgroundColor = "lightgreen";
+              document.getElementById('divfield3').style.backgroundColor = "lightgreen";
+              document.getElementById('divfield4').style.backgroundColor = "lightgreen";
+              document.getElementById('divfield5').style.backgroundColor = "lightgreen";
+              document.getElementById('divfield6').style.backgroundColor = "lightgreen";
+              document.getElementById('divfield7').style.backgroundColor = "lightgreen";
+            }
+          }
+       </script> <br>
+    <div value="tekstveld">
+      <input id="divfield1" type="text" name="Naam" value=""><br><br>
+      <input id="divfield2" type="text" name="Adres" value=""><br><br>
+      <input id="divfield3" type="text" name="Woonplaats" value=""><br><br>
+      <input id="divfield4" type="text" name="Postcode" value=""><br><br>
+      <input id="divfield5" type="text" name="Geboortedatum" value=""><br><br>
+      <input id="divfield6" type="text" name="Nationaliteit" value=""><br><br>
+      <input id="divfield7" type="text" name="Beroep" value=""><br><br>
+    </div>
+    <input class="nedbutton" type="submit" value="Submit">
+  </body>
+  <script src=".JS/app.js"></script>
+</html>
