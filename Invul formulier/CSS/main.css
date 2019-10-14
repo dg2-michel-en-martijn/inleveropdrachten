@@ -42,7 +42,7 @@ html, body {
   height: 70px;
 }
 .inputs .gender {
-  align-content: center;
+  padding-left: 10px;
 }
 
 .inputs .input .input-field {
