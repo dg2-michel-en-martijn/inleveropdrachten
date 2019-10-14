@@ -13,3 +13,6 @@ we hebben de volgende dingen geleerd:
 * functies gebruiken
 * if statements gebruiken
 * variablen gebruiken waaronder arrays
+
+## hoe werkt het
+om te spelen moet je op een vak klikken. je kunt niet op een ingevuld vak klikken
