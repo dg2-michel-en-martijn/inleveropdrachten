@@ -16,3 +16,5 @@ we hebben de volgende dingen geleerd:
 
 ## hoe werkt het
 om te spelen moet je op een vak klikken. je kunt niet op een ingevuld vak klikken
+### opnieuw spelen
+om opnieuw te spelen herlaad je de pagina
