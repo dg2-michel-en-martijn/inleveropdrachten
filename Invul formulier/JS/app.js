@@ -35,18 +35,18 @@ $(document).ready(function(){
     //plaats
     if(!/^[a-zA-z]*$/.test(plaats)){
       alert("Plaats is niet correct");
-    //postcode
     }
+    //postcode
     if(!/^[0-9]{4}\s[a-zA-Z]{2}$/.test(postcode)){
       alert("Postcode is niet correct");
-    //geboortedatum
     }
+    //geboortedatum
     if(/^\d{4}-\d{2}-\d{2}$/.test(geboortedatum)){
       let age = getAge(geboortedatum);
       $("#oud").text("Je word " + (age+=1) + " jaar oud");
       $("#oud").fadeIn("slow");
-    //Nationaliteit
     }
+    //Nationaliteit
     if(!/^\D*$/.test(nationaliteit)){
       alert("Nationaliteit is niet correct");
     }
@@ -55,6 +55,7 @@ $(document).ready(function(){
       alert("Beroep is niet correct");
     }
   });
+
 
   //checken voor incorrecte engvelden
   $("#engbutton").click(function(){
@@ -97,5 +98,5 @@ $(document).ready(function(){
     if(!/^\D*$/.test(divfield7)){
       alert("Work is not correct");
     }
+    });
   });
-});
