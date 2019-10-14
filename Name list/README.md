@@ -17,9 +17,9 @@ we hebben de volgende dingen geleerd:
 
 
 ## hoe werkt het?
-#### naam toevoegen
+### naam toevoegen
 vul een naam in het bovenste text vak en klik daarna ok toevoegen.
-#### naam naar rechts verplatsen
+### naam naar rechts verplatsen
 om de laatste naam naar rechts te verplaatsen klik op de bovenste pijl
-#### naam naar linksverplaatsen
+### naam naar linksverplaatsen
 om de laatste naam naar links te verplaatsen klik op de ondertste pijl
