@@ -7,7 +7,7 @@ var whoseTurn = 0;
 // play the game
 function play(clickedDiv)
 {
-  if ( clickedDIv.innerHTML === "") {
+  if ( clickedDiv.innerHTML === "") {
     clickedDiv.onclick = "";
     clickedDiv.innerHTML = "<span class='XenO'>"+ markers[whoseTurn] +"</span>";
     toggle();
