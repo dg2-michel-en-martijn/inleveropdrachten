@@ -41,6 +41,9 @@ html, body {
   margin: 10px 0px;
   height: 70px;
 }
+.inputs .gender {
+  align-content: center;
+}
 
 .inputs .input .input-field {
   width: 100%;
