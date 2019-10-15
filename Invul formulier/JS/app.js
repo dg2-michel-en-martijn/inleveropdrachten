@@ -64,4 +64,23 @@ $(document).ready(function(){
      $('#geboortedatum-error').fadeOut(300);
    }
  })
+
+ //nationaliteit
+ nationaliteit.keyup(() => {
+   if(!/^\D*$/.test(nationaliteit.val())){
+     $('#nationaliteit-error').fadeIn(300);
+   } else {
+     $('#nationaliteit-error').fadeOut(300);
+   }
+ })
+
+ //beroep
+ beroep.keyup(() => {
+   if(!/^\D*$/.test(beroep.val())){
+     $('#beroep-error').fadeIn(300);
+   } else {
+     $('#beroep-error').fadeOut(300);
+   }
+ })
+
 });
