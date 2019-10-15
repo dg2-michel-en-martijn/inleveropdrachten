@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-  <script src=".JS/app.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Engels Document</title>
+</head>
+<body>
+    <form name="form" novalidate>
+        <div class="inputs" formGroup="form">
+          <div class="input gender">
+            Male: <input type="radio" name="geslacht" value="man"><br>
+            Female: <input type="radio" name="geslacht" value="vrouw">
+          </div>
+            <div class="input">
+                <input class="input-field" id="naam" type="text" name="naam" placeholder="Name *">
+                <div class="errors">
+                    <span class="error" id="naam-error">Name is incorrect</span>
+                </div>
+            </div>
+            <div class="input">
+                <input class="input-field" id="adres" required type="text" name="adres" placeholder="Address *">
+                <div class="errors">
+                    <span class="error" id="adress-error">Address is incorrect</span>
+                </div>
+            </div>
+            <div class="input">
+                <input class="input-field" id="woonplaats" required type="text" name="woonplaats" placeholder="Residence *">
+                <div class="errors">
+                    <span class="error" id="woonplaats-error">Residence is incorrect</span>
+                </div>
+            </div>
+            <div class="input">
+                <input class="input-field" id="postcode" required type="text" name="postcode" placeholder="Postalcode *">
+                <div class="errors">
+                    <span class="error" id="postcode-error">Postalcode is incorrect</span>
+                </div>
+            </div>
+            <div class="input">
+                <input class="input-field" id="geboortedatum" required type="text" name="geboortedatum" placeholder="Birthdate *">
+                <div class="errors">
+                    <span class="error" id="geboortedatum-error">Birthdate is incorrect</span>
+                </div>
+            </div>
+            <div class="input emial-input">
+                <input class="input-field" id="nationaliteit" required type="text" name="nationaliteit" placeholder="Nationality *">
+                <div class="errors">
+                    <span class="error" id="nationaliteit-error">Nationality is incorrect</span>
+                </div>
+            </div>
+            <div class="input">
+                <input class="input-field" id="beroep" required type="text" name="beroep" placeholder="Job/position *">
+                <div class="errors">
+                    <span class="error" id="beroep-error">Job/position is incorrect</span>
+                </div>
+            </div>
+            <button type="submit">Turn in</button>
+        </div>
+    </form>
+  <script src="JS/app.js"></script>
+</body>
 </html>
