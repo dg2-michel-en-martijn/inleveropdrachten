@@ -9,11 +9,11 @@
     <title>Nederlands Document</title>
 </head>
 <body>
-    <form name="form" novalidate>
+    <form id="myForm" name="form" novalidate>
         <div class="inputs" formGroup="form">
           <div class="input gender">
-            Man: <input type="radio" name="geslacht" value="man"><br>
-            vrouw: <input type="radio" name="geslacht" value="vrouw">
+            Man: <input class="man" type="radio" name="geslacht" value="man"><br>
+            vrouw: <input class="vrouw" type="radio" name="geslacht" value="vrouw">
           </div>
             <div class="input">
                 <input class="input-field" id="naam" type="text" name="naam" placeholder="Naam *">
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <button type="submit">Inleveren</button>
-        </div>
+          </div>
     </form>
   <script src="JS/app.js"></script>
 </body>

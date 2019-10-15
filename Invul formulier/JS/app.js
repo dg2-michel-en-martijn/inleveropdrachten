@@ -1,7 +1,7 @@
 //Formule leeftijdberekening
-function getAge(dateString) {
+function getAge(geboortedatum) {
   var today = new Date();
-  var birthDate = new Date(dateString);
+  var birthDate = new Date(geboortedatum);
   var age = today.getFullYear() - birthDate.getFullYear();
   var month = today.getMonth() - birthDate.getMonth();
   if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
@@ -10,7 +10,12 @@ function getAge(dateString) {
   return age;
 }
 
-//checken voor incorrecte nedvelden
+//change background color
+$( "input" ).on( "click", function() {
+  var myform = document.getElementById('myForm');
+  $(myform).css("background-color", "gray");
+});
+//checken voor incorrecte velden
 $(document).ready(function(){
   var naam = $("#naam");
   var adres = $("#adres");
@@ -19,8 +24,8 @@ $(document).ready(function(){
   var geboortedatum = $("#geboortedatum");
   var nationaliteit = $("#nationaliteit");
   var beroep = $("#beroep");
-  //name
 
+  //name
   naam.keyup(() => {
     if(!/^\D*$/.test(naam.val())){
       $('#naam-error').fadeIn(300);
