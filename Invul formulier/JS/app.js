@@ -13,11 +13,11 @@ function getAge(geboortedatum) {
 //change background color
     $(document).ready(function(){
       var myform = document.getElementById('myForm');
-
+      //man
         $('#man').click(function() {
           $(myform).css("background-color", "green");
         });
-
+      //vrouw
         $('#vrouw').click(function(){
           $(myform).css("background-color", "pink");
         })
