@@ -1,25 +1,32 @@
+var veldenNed = ["Naam:","Adres:","Woonplaats:", "Postcode:", "Geboortedatum:", "Nationaliteit:", "Beroep:", "Opmerkingen: "];
+var veldenEng = ["Name:","Address:","Residence:","Postalcode:","Date of Birth:","Nationality:","Work:", "Comments: "];
 //Formule leeftijdberekening
-function getAge(geboortedatum) {
-  var today = new Date();
-  var birthDate = new Date(geboortedatum);
-  var age = today.getFullYear() - birthDate.getFullYear();
-  var month = today.getMonth() - birthDate.getMonth();
-  if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-  }
-  return age;
+function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
 }
+
 
 //change background color
     $(document).ready(function(){
       var myform = document.getElementById('myForm');
       //man
         $('#man').click(function() {
-          $(myform).css("background-color", "green");
+          $(myform).css("background-color", "LightGreen");
+          $("input[type='text']").css("background-color","LightGreen");
+          $("input[type='date']").css("background-color","LightGreen");
         });
       //vrouw
         $('#vrouw').click(function(){
           $(myform).css("background-color", "pink");
+          $("input[type='text']").css("background-color","pink");
+          $("input[type='date']").css("background-color","pink");
         })
     });
 
@@ -95,5 +102,4 @@ $(document).ready(function(){
      $('#beroep-error').fadeOut(300);
    }
  })
-
 });

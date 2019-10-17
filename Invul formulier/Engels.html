@@ -9,11 +9,11 @@
     <title>Engels Document</title>
 </head>
 <body>
-    <form name="form" novalidate>
+    <form id="myForm" name="form" novalidate>
         <div class="inputs" formGroup="form">
           <div class="input gender">
-            Male: <input class="man" type="radio" name="geslacht" value="man"><br>
-            Female: <input class="vrouw" type="radio" name="geslacht" value="vrouw">
+            Male: <input class="man" type="radio" name="geslacht" id="man"><br>
+            Female: <input class="vrouw" type="radio" name="geslacht" id="vrouw">
           </div>
             <div class="input">
                 <input class="input-field" id="naam" type="text" name="naam" placeholder="Name *">
@@ -57,7 +57,10 @@
                     <span class="error" id="beroep-error">Job/position is incorrect</span>
                 </div>
             </div>
-            <button type="submit">Turn in</button>
+            <div class="input">
+                <p class="input-field" id="leeftijd" name="leeftijd"> </p>
+            </div>
+            <button id="submit" type="submit">Submit</button>
         </div>
     </form>
   <script src="JS/app.js"></script>
