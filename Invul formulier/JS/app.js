@@ -11,10 +11,18 @@ function getAge(geboortedatum) {
 }
 
 //change background color
-$( "input" ).on( "click", function() {
-  var myform = document.getElementById('myForm');
-  $(myform).css("background-color", "gray");
-});
+    $(document).ready(function(){
+      var myform = document.getElementById('myForm');
+
+        $('#man').click(function() {
+          $(myform).css("background-color", "green");
+        });
+
+        $('#vrouw').click(function(){
+          $(myform).css("background-color", "pink");
+        })
+    });
+
 //checken voor incorrecte velden
 $(document).ready(function(){
   var naam = $("#naam");
