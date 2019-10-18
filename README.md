@@ -13,6 +13,6 @@ Ik heb de rest van JavaScript gedaan door video tutorials te volgen. Michel heef
 * [reposetory](https://github.com/dg2-michel-en-martijn/inleveropdrachten)
 
 * [inleveropdracht 1](https://dg2-michel-en-martijn.github.io/inleveropdrachten/Tic%20tac%20toe/)
-* [inleveropdracht 2](https://dg2-michel-en-martijn.github.io/inleveropdrachten/dot%20game/)
-* [inleveropdracht 3](https://dg2-michel-en-martijn.github.io/inleveropdrachten/name%20list/)
+* [inleveropdracht 2](https://dg2-michel-en-martijn.github.io/inleveropdrachten/Dot%20game/)
+* [inleveropdracht 3](https://dg2-michel-en-martijn.github.io/inleveropdrachten/Name%20list/)
 * [inleveropdracht 4](https://dg2-michel-en-martijn.github.io/inleveropdrachten/Invul%20formulier/)
