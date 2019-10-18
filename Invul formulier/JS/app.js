@@ -1,5 +1,6 @@
 var veldenNed = ["Naam:","Adres:","Woonplaats:", "Postcode:", "Geboortedatum:", "Nationaliteit:", "Beroep:", "Opmerkingen: "];
 var veldenEng = ["Name:","Address:","Residence:","Postalcode:","Date of Birth:","Nationality:","Work:", "Comments: "];
+
 //Formule leeftijdberekening
 function getAge(dateString) {
     var today = new Date();
@@ -12,6 +13,19 @@ function getAge(dateString) {
     return age;
 }
 
+$(document).ready(function(){
+  var age = "";
+  $('#dob').datepicker({
+     onSelect: function (value, ui) {
+        var today = new Date();
+        age = today.getFullYear() - ui.selectedYear;
+        $('#age').val(age);
+
+     },
+     changeMonth: true,
+     changeYear: true
+  })
+})
 
 //change background color
     $(document).ready(function(){
