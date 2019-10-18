@@ -2,19 +2,13 @@ var veldenNed = ["Naam:","Adres:","Woonplaats:", "Postcode:", "Geboortedatum:", 
 var veldenEng = ["Name:","Address:","Residence:","Postalcode:","Date of Birth:","Nationality:","Work:", "Comments: "];
 
 //leeftijdberekening +  datepicker
-$(document).ready(function(){
-  var age = "";
-  $('#dob').datepicker({
-     onSelect: function (value, ui) {
-        var today = new Date();
-        age = today.getFullYear() - ui.selectedYear;
-        $('#age').val(age);
-
-     },
-     changeMonth: true,
-     changeYear: true
-  })
-})
+function submitBday() {
+    var Bdate = document.getElementById('bday').value;
+    var Bday = +new Date(Bdate);
+    Q4A = "Leeftijd/Age: " + ~~ ((Date.now() - Bday) / (31557600000));
+    var theBday = document.getElementById('resultBday');
+    theBday.innerHTML = Q4A;
+}
 
 //change background color
     $(document).ready(function(){

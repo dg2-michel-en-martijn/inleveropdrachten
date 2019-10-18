@@ -53,13 +53,13 @@
                 </div>
             </div>
             <div class="input">
-                <input class="input-field" id="dob" required type="text" name="geboortedatum" placeholder="Geboortedatum *">
+                <input class="input-field" required type="date" name="bday" id="bday" onchange="submitBday()" placeholder="Geboortedatum *">
                 <div class="errors">
                     <span class="error" id="geboortedatum-error">Geboortedatum niet goed</span>
                 </div>
             </div>
             <div class="input">
-                <input class="input-field" required type="text" id="age" placeholder="Berekende leeftijd *">
+                <p class="input-field" id="resultBday"></p>
             </div>
 
             <button id="submit" type="submit">Inleveren</button>
